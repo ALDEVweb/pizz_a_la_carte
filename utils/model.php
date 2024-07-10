@@ -87,7 +87,7 @@ class _model {
             // Retour : $bdd - chargé avec la chaine de connexion a la bdd (objet PDO)
 
             if (empty(static::$bdd)) {
-                static::$bdd = new \PDO("mysql:host=localhost;dbname=projets_pizza_alaugier;charset=UTF8", "alaugier", "9FPp96F9l?T");
+                static::$bdd = new \PDO("mysql:host=localhost;dbname=projets_pizza_alaugier;charset=UTF8", "", "");
             }
             return static::$bdd;
         }
